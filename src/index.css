@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ubuntu Bold";
+    src: url('/fonts/subset-Ubuntu-Bold.woff2') format('woff2'),
+         url('/fonts/subset-Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu Medium";
+    src: url('/fonts/subset-Ubuntu-Medium.woff2') format('woff2'),
+         url('/fonts/subset-Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ubuntu Regular";
+    src: url('/fonts/subset-Ubuntu-Regular.woff2') format('woff2'),
+         url('/fonts/subset-Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+.input-step-1 {
+    @apply border border-neutral-light-gray py-2 px-4 rounded-lg text-primary-marine-blue font-bold transition-all placeholder:text-neutral-cool-gray placeholder:font-normal hover:border-primary-purplish-blue focus:outline-none focus:border-primary-purplish-blue
+}
+
+.toggle-switch {
+    @apply w-12 h-6 bg-primary-marine-blue rounded-[99px] relative;
+    transition: background-color 0.1 ease;
+}
+
+.toggle-switch .thumb {
+    @apply size-4 bg-neutral-white rounded-full absolute left-[7px] top-2/4;
+    transform: translateX(0);
+    transition: left 0.15s ease;
+    transform: translateY(-50%);
+}
+
+.toggle-switch.toggled .thumb {
+    left: calc(50px - 25px);
+}
