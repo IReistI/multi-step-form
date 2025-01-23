@@ -76,7 +76,7 @@ export default function Step2({ onNext }: Step2Props) {
             htmlFor="arcade"
             onClick={() => handleClickOption(options[0].option, options[0].billing)}
           >
-            <img className="self-start mt-1 1xl:m-0" src="icons/icon-arcade.svg" alt="icon arcade" />
+            <img className="self-start mt-1 1xl:m-0 aspect-square" src="icons/icon-arcade.svg" alt="icon arcade" />
             <div>
               <h2 className="font-bold text-primary-marine-blue">Arcade</h2>
               <p className="text-neutral-cool-gray">${formatPaymentType(state.type, options[0].billing)}</p>
@@ -96,7 +96,7 @@ export default function Step2({ onNext }: Step2Props) {
             htmlFor="advanced"
             onClick={() => handleClickOption(options[1].option, options[1].billing)}
           >
-            <img className="self-start mt-1 1xl:m-0" src="icons/icon-advanced.svg" alt="icon advanced" />
+            <img className="self-start mt-1 1xl:m-0 aspect-square" src="icons/icon-advanced.svg" alt="icon advanced" />
             <div>
               <h2 className="font-bold text-primary-marine-blue">Advanced</h2>
               <p className="text-neutral-cool-gray">${formatPaymentType(state.type, options[1].billing)}</p>
@@ -116,7 +116,7 @@ export default function Step2({ onNext }: Step2Props) {
             htmlFor="pro"
             onClick={() => handleClickOption(options[2].option, options[2].billing)}
           >
-            <img className="self-start mt-1 1xl:m-0" src="icons/icon-pro.svg" alt="icon pro" />
+            <img className="self-start mt-1 1xl:m-0 aspect-square" src="icons/icon-pro.svg" alt="icon pro" />
             <div>
               <h2 className="font-bold text-primary-marine-blue">Pro</h2>
               <p className="text-neutral-cool-gray">${formatPaymentType(state.type, options[2].billing)}</p>
